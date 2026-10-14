@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>همه محصولات | بازارینو</title>
+    <link rel="stylesheet" href="./css/cssreset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header__navbar">
+        <div class="main-header__rightside">
+          <div class="main-header__logo"><a href="#">بازارینو</a></div>
+          <a href="#" class="main-header__link">خانه</a>
+          <a href="#" class="main-header__link">فروشگاه</a>
+          <a href="#" class="main-header__link">دسته بندی ها</a>
+          <a href="#" class="main-header__link">درباره ما</a>
+        </div>
+        <div class="main-header__leftside">
+          <div class="main-header__cart">
+            <a href="#" class="main-header__link">سبد خرید</a>
+            <span class="main-header__cart-count">۲</span>
+          </div>
+          <a href="#" class="main-header__link">ورود</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <nav class="main__breadcrumb" aria-label="مسیر راهنما">
+        <ol>
+          <li><a href="#">خانه</a></li>
+          <li aria-current="page">فروشگاه</li>
+        </ol>
+      </nav>
+      <h1 class="main__title">فروشگاه</h1>
+      <p class="main__discription">
+        محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید
+      </p>
+      <div class="main__products">
+        <aside class="main__side-bar">
+          <h2>فیلتر محصولات</h2>
+          <form action="/" method="get">
+            <fieldset>
+              <legend>دسته بندی</legend>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="digital-gadgets"
+                />
+                دیجیتال و گجت
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="home-lifestyle" />
+                خانه و سبک زندگی
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="personal-stuff" />
+                لوازم شخصی
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>محدوده قیمت</legend>
+
+              <label
+                ><input type="radio" name="price" value="under-2-million" />
+                کم تر از ۲ میلیون
+              </label>
+              <label>
+                <input type="radio" name="price" value="2-to-5-million" />
+                ۲ تا ۵ میلیون
+              </label>
+              <label>
+                <input type="radio" name="price" value="over-5-million" />
+                بیشتر از ۵ میلیون
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>امتیاز کاربران</legend>
+              <label>
+                <input type="checkbox" name="only-more-than-4-star-products" />
+                ۴ ستاره به بالا
+              </label>
+            </fieldset>
+          </form>
+        </aside>
+        <div class="main__shop">
+          <div class="main__search-bar">
+            <label>
+              <input type="search" placeholder="جست و جو در محصولات" />
+            </label>
+            <div class="main__search-info">
+              <span>مرتب سازی:پیش فرض</span>
+              <span>نمایش ۶ محصول</span>
+            </div>
+          </div>
+          <div class="main__product-cards">
+            <article class="main__product">
+              <a href="#" class="main__product-link">
+                <img
+                  src="./photo/aire-pod.webp"
+                  alt="Black wireless earbuds with RGB lightsing"
+                  class="main__product-img"
+                />
+                <span class="main__free-shipping">ارسال رایگان</span>
+                <h3 class="main__product-title">هدفون بیسیم آریا</h3>
+                <div class="main__product-details">
+                  <p class="main__product-price">۲٬۴۹۰٬۰۰۰ تومان</p>
+                  <span class="main__product-rate">۴٫۷ *</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="main__product">
+              <a href="#" class="main__product-link">
+                <img
+                  src="./photo/watch.webp"
+                  alt="black smart watch  "
+                  class="main__product-img"
+                />
+                <span class="main__free-shipping">ارسال رایگان</span>
+                <h3 class="main__product-title">ساعت هوشمند</h3>
+                <div class="main__product-details">
+                  <p class="main__product-price">۳٬۹۹۰٬۰۰۰ تومان</p>
+                  <span class="main__product-rate">۴٫۵ *</span>
+                </div>
+              </a>
+            </article>
+            <article class="main__product">
+              <a href="#" class="main__product-link">
+                <img
+                  src="./photo/camera.webp"
+                  alt="orange camera"
+                  class="main__product-img"
+                />
+                <span class="main__free-shipping">ارسال رایگان </span>
+                <h3 class="main__product-title">دوربین چاپ فوری</h3>
+                <div class="main__product-details">
+                  <p class="main__product-price">۵٬۷۹۰٬۰۰۰ تومان</p>
+                  <span class="main__product-rate">۴٫۸ *</span>
+                </div>
+              </a>
+            </article>
+            <article class="main__product">
+              <a href="#" class="main__product-link">
+                <img
+                  src="./photo/keybord.webp"
+                  alt="logitex black mecanical keybord"
+                  class="main__product-img"
+                />
+                <h3 class="main__product-title">کیبور مکانیکی لاجیتک</h3>
+                <div class="main__product-details">
+                  <p class="main__product-price">۱٬۸۹۰٬۰۰۰ تومان</p>
+                  <span class="main__product-rate">۵ *</span>
+                </div>
+              </a>
+            </article>
+            <article class="main__product">
+              <a href="#" class="main__product-link">
+                <img
+                  src="./photo/speeker.webp"
+                  alt="case speeker whit rgb lightin"
+                  class="main__product-img"
+                />
+                <h3 class="main__product-title">اسپیکر چمدانی</h3>
+                <div class="main__product-details">
+                  <p class="main__product-price">۱٬۴۵۰٬۰۰۰ تومان</p>
+                  <span class="main__product-rate">۴٫۳ *</span>
+                </div></a
+              >
+            </article>
+            <article class="main__product">
+              <a href="#" class="main__product-link">
+                <img
+                  src="./photo/cofee-mog.webp"
+                  alt="black mog fot coffe"
+                  class="main__product-img"
+                />
+                <h3 class="main__product-title">ماگ سفری استیل</h3>
+                <div class="main__product-details">
+                  <p class="main__product-price">۸۹۰٬۰۰۰ تومان</p>
+                  <span class="main__product-rate">۴٫۷ *</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__copy">&copy; 1405</p>
+      <div class="footer__links">
+        <a href="#">پشتیبانی</a>
+        .
+        <a href="#">قوانین و شرایط</a>
+        .
+        <a href="#">اینستاگرام</a>
+      </div>
+      <a href="/" class="footer__link">بازارینو؛ خرید ساده و مطمئن</a>
+    </footer>
+  </body>
+</html>
