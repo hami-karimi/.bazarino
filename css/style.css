@@ -212,3 +212,42 @@ fieldset > legend {
   padding: var(--spacing-4);
   margin-top: var(--spacing-2);
 }
+.main-product__details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-4);
+  align-items: start;
+}
+
+.main-product__product-photo {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: var(--spacing-2);
+  align-items: start;
+}
+
+.main-product__thumbnails-img {
+  width: 100%;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  margin: var(--spacing-1) 0;
+}
+.main-product__thumbnails-img:first-child {
+}
+.main-product__main-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  background-color: var(--color-surface);
+}
+.main-product__thumbnail {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+}
+.main-product__thumbnail:first-child .main-product__thumbnails-img {
+  border: solid 1px var(--color-primary);
+}
