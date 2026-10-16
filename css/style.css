@@ -212,7 +212,12 @@ fieldset > legend {
   padding: var(--spacing-4);
   margin-top: var(--spacing-2);
 }
+.main-product {
+  width: 90%;
+  margin-inline: auto;
+}
 .main-product__details {
+  margin-top: var(--spacing-4);
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: var(--spacing-4);
@@ -298,14 +303,11 @@ fieldset > legend {
 .main-product__stock::before {
   content: "●";
 }
-.main-product {
-  width: 90%;
-  margin-inline: auto;
-}
+
 .main-product__comments-container {
   display: flex;
   flex-direction: column;
-  margin-top: var(--spacing-2);
+  margin-top: var(--spacing-5);
   gap: var(--spacing-2);
 }
 .main-product__user-review {
