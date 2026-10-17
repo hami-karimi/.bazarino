@@ -27,6 +27,46 @@
         </div>
       </nav>
     </header>
+    <main class="main register">
+      <form action="/" method="get" class="register__form">
+        <h1 class="register__title">ساخت حساب کاربری</h1>
+        <p class="register__text">
+          برای خرید سریع‌تر، حساب بازارینو را بسازید؛
+        </p>
+        <label class="register__lable">
+          ایمیل
+          <input type="email" placeholder="name@example.com" required />
+        </label>
+        <label class="register__lable">
+          شماره همراه
+          <input type="tel" required placeholder="09122221133" />
+        </label>
+        <label class="register__lable">
+          رمز عبور
+          <input
+            type="password"
+            required
+            placeholder="رمز عبور خود را وارد کنید"
+            minlength="8"
+            maxlength="64"
+          />
+        </label>
+        <label class="register__lable">
+          تکرار رمز عبور
+          <input
+            type="password"
+            required
+            placeholder="رمز عبور خود را دوباره وارد کنید"
+            minlength="8"
+            maxlength="64"
+          />
+        </label>
+        <div class="register__button">
+          <button type="reset">پاک کردن</button>
+          <button type="submit">ثبت نام</button>
+        </div>
+      </form>
+    </main>
     <footer class="footer">
       <p class="footer__copy">&copy; 1405</p>
       <div class="footer__links">
