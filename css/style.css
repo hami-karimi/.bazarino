@@ -21,8 +21,12 @@
   --spacing-5: 48px;
   --radius-card: 16px;
   --shadow-soft: 0 4px 16px rgb(20 33 61 / 8%);
+  --shadow-primary: 0 0 0 3px rgb(15 118 110 / 15%);
 }
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
@@ -58,6 +62,9 @@ body {
   padding: var(--spacing-1);
   border-radius: var(--spacing-2);
 }
+.main-header__cart:hover {
+  box-shadow: var(--shadow-primary);
+}
 .main-header__link {
   position: relative;
 }
@@ -69,7 +76,7 @@ body {
   right: 0;
   height: 2px;
   width: 0;
-  transition: width 0.5s ease;
+  transition: width 0.3s ease;
 }
 .main-header__link:hover::after {
   width: 100%;
@@ -98,6 +105,7 @@ body {
 
 .main {
   padding: 2rem 3rem;
+  flex: 1;
 }
 .main__discription {
   color: var(--color-text-muted);
@@ -178,6 +186,8 @@ body {
   display: flex;
   align-self: start;
   flex-direction: column;
+  position: sticky;
+  top: 200px;
   background-color: var(--color-surface);
   border-radius: var(--radius-card);
   padding: var(--spacing-1);
@@ -202,10 +212,12 @@ fieldset > legend {
 .main__side-bar fieldset label:nth-child(2) {
   margin-top: var(--spacing-1);
 }
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--color-primary);
+}
 .footer {
-  position: fixed;
   width: 100%;
-  bottom: 0;
   direction: ltr;
   display: flex;
   justify-content: space-between;
@@ -297,6 +309,9 @@ fieldset > legend {
   padding: 12px 14px;
   border-radius: var(--radius-card);
 }
+.main-product__add-to-cart:hover {
+  box-shadow: var(--shadow-primary);
+}
 .main-product__stock {
   display: flex;
   color: var(--color-success);
@@ -385,6 +400,9 @@ fieldset > legend {
   border: 1px solid var(--color-primary);
   font-weight: var(--font-weight-bold);
 }
+.register__button button:hover {
+  box-shadow: var(--shadow-primary);
+}
 .register__button button:first-child {
   color: var(--color-primary);
 }
@@ -395,7 +413,7 @@ fieldset > legend {
 .register__form input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgb(15 118 110 / 15%);
+  box-shadow: var(--shadow-primary);
 }
 .register__form input:user-valid {
   border-color: var(--color-success);
