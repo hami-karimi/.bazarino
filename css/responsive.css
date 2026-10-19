@@ -199,4 +199,46 @@
     padding: 3px 2px;
     margin-top: 8px;
   }
+  .main-product__product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-product__details {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-product__product-photo {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-product__thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    object-fit: contain;
+    gap: 3px;
+  }
+  .main-product__hotsell-label {
+    display: none;
+  }
+  .main-product__product-name {
+    font-size: x-large;
+    text-align: center;
+  }
+  .main-product__rate-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-product__description {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .main-product__purchase-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
