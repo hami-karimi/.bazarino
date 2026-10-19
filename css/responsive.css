@@ -242,3 +242,26 @@
     gap: 20px;
   }
 }
+/* /*برای عدم فارت پیچ شدن/* */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #2dd4bf;
+    --color-primary-light: #31ca645e;
+    --color-accent: #f59e0b;
+    --color-text: #e2e8f0;
+    --color-text-muted: #94a3b8;
+    --color-background: #0f172a;
+    --color-footer-background: #05080e;
+    --color-surface: #1e293b;
+    --color-border: #334155;
+    --color-success: #16a34a;
+    --color-error: #dc2626;
+    --shadow-soft: 0 4px 16px rgb(0 0 0 / 20%);
+    --shadow-primary: 0 0 0 3px rgb(45 212 191 / 15%);
+  }
+  .footer {
+    background-color: var(--color-footer-background);
+    color: var(--color-text);
+  }
+}
