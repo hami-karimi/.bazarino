@@ -81,6 +81,54 @@
         <a href="./products.html" class="main-header__link">فروشگاه</a>
         <a href="#" class="main-header__link">دسته بندی ها</a>
         <a href="#" class="main-header__link">درباره ما</a>
+        <div class="mobile__filters">
+          <h2>فیلتر محصولات</h2>
+          <form action="/" method="get">
+            <fieldset>
+              <legend>دسته بندی</legend>
+              <label
+                ><input
+                  type="checkbox"
+                  name="category"
+                  value="digital-gadgets"
+                />
+                دیجیتال و گجت
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="home-lifestyle" />
+                خانه و سبک زندگی
+              </label>
+              <label>
+                <input type="checkbox" name="category" value="personal-stuff" />
+                لوازم شخصی
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>محدوده قیمت</legend>
+
+              <label
+                ><input type="radio" name="price" value="under-2-million" />
+                کم تر از ۲ میلیون
+              </label>
+              <label>
+                <input type="radio" name="price" value="2-to-5-million" />
+                ۲ تا ۵ میلیون
+              </label>
+              <label>
+                <input type="radio" name="price" value="over-5-million" />
+                بیشتر از ۵ میلیون
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>امتیاز کاربران</legend>
+              <label>
+                <input type="checkbox" name="only-more-than-4-star-products" />
+                ۴ ستاره به بالا
+              </label>
+            </fieldset>
+            <button>اعمال فیلتر</button>
+          </form>
+        </div>
       </nav>
     </header>
     <label class="mobile-search-bar">
