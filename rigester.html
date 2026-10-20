@@ -13,7 +13,9 @@
     <header class="main-header">
       <nav class="main-header__navbar">
         <div class="main-header__rightside">
-          <h1 class="main-header__logo"><a href="#">بازارینو</a></h1>
+          <div class="main-header__logo">
+            <a href="index.html">بازارینو</a>
+          </div>
           <a href="./products.html" class="main-header__link">خانه</a>
           <a href="./products.html" class="main-header__link">فروشگاه</a>
           <a href="#" class="main-header__link">دسته بندی ها</a>
@@ -94,13 +96,19 @@
         </p>
         <label class="register__lable">
           ایمیل
-          <input type="email" placeholder="name@example.com" required />
+          <input
+            type="email"
+            placeholder="name@example.com"
+            name="user-email"
+            required
+          />
         </label>
         <label class="register__lable">
           شماره همراه
           <input
             type="tel"
             required
+            name="user-phone-number"
             placeholder="09122221133"
             pattern="09[0-9]{9}|۰۹[۰-۹]{9}"
           />
@@ -109,6 +117,7 @@
           رمز عبور
           <input
             type="password"
+            name="user-password"
             required
             placeholder="رمز عبور خود را وارد کنید"
             minlength="8"
@@ -119,6 +128,7 @@
           تکرار رمز عبور
           <input
             type="password"
+            name="user-reinter-password"
             required
             placeholder="رمز عبور خود را دوباره وارد کنید"
             minlength="8"
