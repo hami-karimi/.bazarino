@@ -1,3 +1,5 @@
+![Bazaarino Banner](assets/bazaarino-banner.png)
+
 # Bazaarino
 
 A responsive Persian e-commerce website built with HTML5 and CSS3.
