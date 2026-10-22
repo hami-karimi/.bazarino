@@ -1,3 +1,5 @@
+@import url(./animotion.css);
+
 @media (min-width: 769px) and (max-width: 1100px) {
   .main-product__product-photo {
     grid-template-columns: minmax(0, 1fr);
@@ -266,7 +268,8 @@
     margin-inline: auto;
   }
   .main-product__hotsell-label {
-    display: none;
+    /* display: none; */
+    align-self: center;
   }
   .main-product__product-name {
     font-size: x-large;

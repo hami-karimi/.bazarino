@@ -1,0 +1,88 @@
+.main-header,
+.mobile-header {
+  z-index: 100;
+}
+
+/* ========================================
+   1. Product card hover
+   حرکت کارت و سایه هنگام هاور
+======================================== */
+
+.main__product {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.main__product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgb(20 33 61 / 16%);
+}
+
+/* بزرگ شدن عکس داخل کارت */
+
+.main__product-img {
+  transition: transform 0.3s ease;
+}
+
+.main__product:hover .main__product-img {
+  transform: scale(1.05);
+}
+
+/* ========================================
+   2. Page entrance
+   ورود نرم محتوای صفحه
+======================================== */
+
+main {
+  animation: page-enter 0.7s ease both;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bestseller-color {
+  from {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+
+  to {
+    background-color: #0f766e;
+    color: #ee5050;
+  }
+}
+.main__free-shipping,
+.main-product__hotsell-label {
+  animation: bestseller-color 3s ease-in-out infinite alternate;
+}
+/* ========================================
+======================================== */
+/* 
+@media (prefers-reduced-motion: reduce) {
+  .main__product,
+  .main__product-img {
+    animation: none;
+    transition: none;
+  }
+
+  .main__product:hover {
+    transform: none;
+  }
+
+  .main__product:hover .main__product-img {
+    transform: none;
+  }
+
+  main {
+    animation: none;
+  }
+} */
