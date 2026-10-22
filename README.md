@@ -2,6 +2,7 @@
 
 A responsive Persian e-commerce website built with HTML5 and CSS3.
 
+[**Live Demo ↗**] (https://hami-karimi.github.io/.bazarino/)
 ## Overview
 
 Bazaarino is a front-end practice project created to demonstrate core HTML and CSS skills through the implementation of an e-commerce user interface. The website features a right-to-left (RTL) layout, responsive pages, and a CSS-based dark mode.
