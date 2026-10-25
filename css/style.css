@@ -423,7 +423,7 @@ input[type="radio"] {
 .register__form input:user-invalid {
   border-color: var(--color-error);
 }
-/* /*صرفا برای جدا کردن دو قسمت و فارت پیچ نشدن /*/
+
 .mobile-header {
   display: none;
 }
