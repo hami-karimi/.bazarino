@@ -3,11 +3,6 @@
   z-index: 100;
 }
 
-/* ========================================
-   1. Product card hover
-   حرکت کارت و سایه هنگام هاور
-======================================== */
-
 .main__product {
   transition:
     transform 0.3s ease,
@@ -28,11 +23,6 @@
 .main__product:hover .main__product-img {
   transform: scale(1.05);
 }
-
-/* ========================================
-   2. Page entrance
-   ورود نرم محتوای صفحه
-======================================== */
 
 main {
   animation: page-enter 0.7s ease both;
